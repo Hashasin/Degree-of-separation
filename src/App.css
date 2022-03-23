@@ -1,38 +1,172 @@
 .App {
-  text-align: center;
+  display:flex;
+  flex-direction: row;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.sidebar-container {
+  width:100%;
+  display:flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height:100vh;
+  border-right: 1px solid #dfdfdf;
+  
+}
+.margin-top {
+  margin-top:20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-left {
+  margin:-8px 0 -25px 0;
+  display:flex;
+  width: 340px;
+  justify-content: flex-start;
+  align-items: center;
+  
+
+}
+.members-list-container {
+  width:20%;
+  height:100%;
+  position: fixed;
+  padding:0 8px 0 0;
+  /* border-right: 2px solid #d3d3d3; */
+  
+}
+.members-array {
+  display:flex;
+  line-height: 2px;
+  flex-wrap: wrap;
+  height:100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:center;
+  padding:0 0 0 4px;
+  
+}
+.members-array p {
+  font-size:8px;
+}
+.user-div {
+  border-right: 1px solid #d3d3d3;
+  
+  padding:2px 3px 2px 4px;
+  border-radius: 12px 0 0 12px;
+}
+.members-list{
+  width:100%;
+  line-height:15px;
+  display:flex;
+  
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items:center;
+  border-radius:12px;
+  border:1px solid #bbb5b5;
+  margin-top:8px;
+  /* padding:0px 0 0px 8px ; */
+}
+.members-list p {
+  font-family: 'Uber';
+  font-weight:600;
+  font-size:18px
+}
+.members-list h3 {
+  font-family: 'SanFransicoBold';
+  
+  font-size:18px;
+  
+}
+.text-left h3 {
+  color:red;
+  text-decoration: underline;
+  font-size:24px;
+}
+.main-div {
+  width:75%;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  height:100vh;
+  
+}
+.sidebar {
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction: row;
+  padding:12px;
+  margin-top:25px
+
+  
+  
+}
+.field-container {
+  width:75%;
+  display:flex;
+  
+  /* padding:0 8px 0 0; */
+  /* border-right: 1px solid #d3d3d3; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  width:75%;
+  margin-left:300px;
+  height:100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:flex-start;
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
+.label-container {
+  display:flex;
+  margin-left:-8px;
+  width: 100%;
+  
+  justify-content: flex-start;
+  align-items:flex-start;
+  text-align: left;
 }
+.label-container label {
+  font-weight: 400;
+  font-family: 'Uber';
+}
+.input-container {
+  display:flex;
+  width:340px;
+  padding:8px;
+  margin-top:-10px;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+.form-field {
+  width:100%;
+  margin-top:-4px;
+  border:1.5px solid #c0bfbf;
+  padding:12px;
+  margin:12px 12px 12px 12px;
+  border-radius:8px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.submit-btn {
+  width:340px; 
+  padding:2px;
+  margin-top:4px;
+  border-radius: 8px;
+  background-color: blue;
+  border:0px;
+}
+.submit-btn p {
+  color:#fff;
+  font-family: 'Uber';
+  font-size:14px;
 }

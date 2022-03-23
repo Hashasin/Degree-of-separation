@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,30 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* @font-face {
+  font-family: "SanFransicoBold";
+  src: local("SanFransicoBold"),
+   url("./fonts/SanFrancisco/SF-Bold.ttf") format("truetype");
+  font-weight: bold;
+  }
+
+@font-face {
+    font-family: "Uber";
+    src: local("Uber"),
+    url("./fonts/Uber/UberMoveMedium.otf") format("truetype");
+    font-weight: bold;
+    }
+@font-face {
+    font-family: "Samsung";
+    src: local("Samsung"),
+    url("./fonts/Samsung/SamsungOne-400.ttf") format("truetype");
+    font-weight:normal;
+    }   */
+h1, h2, h3 {
+  font-family: "Uber";
+}
+p {
+  font-family: 'Uber';
+  font-size:8px;
 }
